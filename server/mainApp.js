@@ -10,6 +10,8 @@ const status = mongoose.connect("mongodb://localhost/sampleProject");
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+const Data=require("./model/dataModel.js");
+
 app.server = app.listen(port, () => {
   console.log("Server is running");
 });
